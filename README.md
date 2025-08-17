@@ -463,6 +463,36 @@ pnpm dev
 
 ### 1. package.json スクリプト設定
 
+修正前
+
+```json
+～
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
+  }
+～
+```
+
+修正後
+
+```json
+～
+  "scripts": {
+    "install-fonts": "node --experimental-strip-types scripts/install-fonts.ts",
+    "preinstall": "pnpm install-fonts",
+    "predev": "pnpm install-fonts",
+    "prebuild": "pnpm install-fonts",
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
+  }
+～
+```
+
 ### 2. ファイル追加
 
 | No. | ファイル                       | 概要                                                                                 |
