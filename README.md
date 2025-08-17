@@ -377,10 +377,10 @@ pnpm i vuetify @mdi/font
 
 ### 2. ファイル修正
 
-| No. | ファイル    | 概要                         |
-| --: | ----------- | ---------------------------- |
-|   1 | src/App.vue | VApp,VAppBar,VAppView を追加 |
-|   2 | src/main.ts | Vue に Vuetify を追加        |
+| No. | ファイル    | 概要                      |
+| --: | ----------- | ------------------------- |
+|   1 | src/App.vue | VApp,VAppBar,VMain を追加 |
+|   2 | src/main.ts | Vue に Vuetify を追加     |
 
 #### src/App.vue
 
