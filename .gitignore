@@ -7,31 +7,25 @@ dist/
 # Development cache and tmp files
 tmp/
 
-# Fonts
-src/assets/fonts/noto-sans/
-
 # Environment files
 .env
 
+# Fonts
+*.ttf
+
+# Vue Router auto-generated types
+types/typed-router.d.ts
+
 # IDE files
 .vscode/*
-!.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
-.idea/
-*.swp
-*.swo
+!.vscode/tasks.json
 
 # OS generated files
 .DS_Store
 ._*
 Thumbs.db
 
-# Coverage directory used by tools like istanbul
+# Coverage directory
 coverage/
-*.lcov
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?

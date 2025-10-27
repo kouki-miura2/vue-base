@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "types": ["unplugin-vue-router/client"],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "exactOptionalPropertyTypes": true,
-    "tsBuildInfoFile": "./tmp/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "./tmp/tsconfig.tsbuildinfo",
+    "types": ["unplugin-vue-router/client"]
   },
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["src/**/*", "types/**/*"]

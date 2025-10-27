@@ -1,6 +1,6 @@
 <template>
   <VApp>
-    <VAppBar color="red" title="My App">
+    <VAppBar color="deep-orange" title="My App">
       <template #prepend>
         <VAppBarNavIcon />
       </template>

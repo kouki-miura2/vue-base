@@ -4,5 +4,5 @@ const title = 'Top Page'
 
 <template>
   <div>{{ title }}</div>
-  <router-link to="/NextPage">Next Page</router-link>
+  <router-link to="/next-page">Next Page</router-link>
 </template>

@@ -1,10 +1,8 @@
 import './assets/main.css'
 import { createApp } from 'vue'
-// Vue Router // 追加
 import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
 
-// 追加
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -14,20 +12,15 @@ import '@mdi/font/css/materialdesignicons.css'
 
 import App from './App.vue'
 
-// Vue Router // 追加
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
-// 追加
 // Vuetify
 const vuetify = createVuetify({
   components,
   directives,
 })
 
-createApp(App)
-  .use(router)
-  .use(vuetify) // 追加
-  .mount('#app')
+createApp(App).use(router).use(vuetify).mount('#app')
