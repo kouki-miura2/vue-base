@@ -55,3 +55,5 @@ pnpm build
 [Step5 : WebFont](./step5.md)
 
 [Step6 : Project setting](./step6.md)
+
+[Step7 : Code formatter](./step7.md)
