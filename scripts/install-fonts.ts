@@ -38,7 +38,7 @@ async function installNotoSansFont(): Promise<void> {
   } catch (error) {
     console.error(
       '❌ Failed to install Noto Sans font:',
-      error instanceof Error ? error.message : error
+      error instanceof Error ? error.message : error,
     )
     process.exit(1)
   }
