@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync } from 'fs'
-import { join, dirname } from 'path'
+import { join } from 'path'
 import { execSync } from 'child_process'
 
 const FONTS_DIR = join(process.cwd(), 'src', 'assets', 'fonts')
@@ -8,7 +8,7 @@ const FONT_FILE = join(NOTO_SANS_DIR, 'NotoSans-Regular.ttf')
 const FONT_URL =
   'https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/NotoSans-Regular.ttf'
 
-async function installNotoSansFont(): Promise<void> {
+const installNotoSansFont = async (): Promise<void> => {
   if (existsSync(FONT_FILE)) {
     console.log('✓ Noto Sans font already installed.')
     return
