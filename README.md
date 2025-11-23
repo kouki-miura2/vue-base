@@ -56,4 +56,4 @@ pnpm build
 
 [Step6 : Project setting](./step6.md)
 
-[Step7 : Code formatter](./step7.md)
+[Step7 : Prettier & ESLint](./step7.md)
